@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="https://kit.fontawesome.com/3ca3ef9873.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="Images/logo.png" alt="Logo" class="logo">
+            <ul>
+                <li><img src="Images/notification.png" alt="notification"></li>
+                <li><img src="Images/inbox.png" alt="notification"></li>
+                <li><img src="Images/video.png" alt="notification"></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="Images/search.png" alt="search">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="Images/profile-pic.jfif" alt="profile">
+            </div>
+        </div>
+
+        <!-- ****************************************Settings-menu**************************************** -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="Images/profile-pic.jfif" alt="profile-pic">
+                    <div>
+                        <p>Bilal Malik</p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="Images/feedback.png" alt="feedback">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="Images/setting.png" alt="settings" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="Images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="Images/help.png" alt="help" class="settings-icon">
+                    <a href="#">Help & Support <img src="Images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="Images/display.png" alt="display" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="Images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="Images/logout.png" alt="logout" class="settings-icon">
+                    <a href="#">Logout <img src="Images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- ****************************************left-sidebar**************************************** -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="Images/news.png" alt="news">Latest News</a>
+                <a href="#"><img src="Images/friends.png" alt="friends">Friends</a>
+                <a href="#"><img src="Images/group.png" alt="group">Groups</a>
+                <a href="#"><img src="Images/marketplace.png" alt="marketplace">MarkptPlace</a>
+                <a href="#"><img src="Images/watch.png" alt="watch">Watch</a>
+                <a href="#">See More</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="Images/shortcut-1.png" alt="shortcut-1">Web Developers</a>
+                <a href="#"><img src="Images/shortcut-2.png" alt="shortcut-2">Web Design Course</a>
+                <a href="#"><img src="Images/shortcut-3.png" alt="shortcut-3">Full Stack Development</a>
+                <a href="#"><img src="Images/shortcut-4.png" alt="shortcut-4.png">Website Experts</a>
+            </div>
+        </div>
+        <!-- ****************************************main-content**************************************** -->
+        <div class="main-content">
+            <div class="story-galery">
+                <div class="story story-1">
+                    <img src="Images/upload.png" alt="upload">
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story-2">
+                    <img src="Images/member-1.jfif" alt="upload">
+                    <p>Zain's Story</p>
+                </div>
+
+                <div class="story story-3">
+                    <img src="Images/member-2.jfif" alt="upload">
+                    <p>Arhams's Story</p>
+                </div>
+
+                <div class="story story-4">
+                    <img src="Images/member-3.jpg" alt="upload">
+                    <p>Hassan's Story</p>
+                </div>
+
+                <div class="story story-5">
+                    <img src="Images/member-4.jpg" alt="upload">
+                    <p>Hassan's Story</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="Images/profile-pic.jfif" alt="profile-pic">
+                    <div>
+                        <p>Bilal Malik</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Bilal?"></textarea>
+
+                    <div class="add-post-links">
+                        <a href="#"><img src="Images/live-video.png" alt="video">Live Video</a>
+                        <a href="#"><img src="Images/photo.png" alt="video">Photo/Video</a>
+                        <a href="#"><img src="Images/feeling.png" alt="video">Feeling Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Images/profile-pic.jfif" alt="profile-pic">
+                        <div>
+                            <p>Bilal Malik</p>
+                            <span>9 November 2022, 9:30 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"><i class="fa-sharp fa-solid fa-location-dot"></i> Harnoi Lake , Abbottabad 😁 <a
+                        href="#">#Harnao Lake</a> <a href="#">#Abbottabad</a></p>
+                <img src="Images/feed-image-1.jpg" alt="feed-image-1" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Images/like-blue.png" alt="like">120</div>
+                        <div><img src="Images/comments.png" alt="like">45</div>
+                        <div><img src="Images/share.png" alt="like">10</div>
+                    </div>
+
+                    <div class="post-profile-icons">
+                        <img src="Images/profile-pic.jfif" alt="profile-pic"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Images/member-1.jfif" alt="profile-pic">
+                        <div>
+                            <p>Zain ul Abidin</p>
+                            <span>15 December 2021, 6:30 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"><i class="fa-sharp fa-solid fa-location-dot"></i> Royal Farm Multan 😎 <a
+                        href="#">#Royal Farm</a> <a href="#">#Multan</a></p>
+                <img src="Images/feed-image-2.jfif" alt="feed-image-2" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Images/like.png" alt="like">100</div>
+                        <div><img src="Images/comments.png" alt="like">50</div>
+                        <div><img src="Images/share.png" alt="like">15</div>
+                    </div>
+
+                    <div class="post-profile-icons">
+                        <img src="Images/member-1.jfif" alt="member-1"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Images/member-2.jfif" alt="profile-pic">
+                        <div>
+                            <p>Arham Tayyab</p>
+                            <span>13 December 2021, 1:30 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"><i class="fa-sharp fa-solid fa-location-dot"></i> New Defence View, Dera Ghazi Khan
+                </p>
+                <p class="post-text">I dont do Matching Shirts 🔥 <a href="#">#Black</a> </p>
+                <img src="Images/feed-image-3.jfif" alt="feed-image-3" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Images/like.png" alt="like">250</div>
+                        <div><img src="Images/comments.png" alt="like">65</div>
+                        <div><img src="Images/share.png" alt="like">25</div>
+                    </div>
+
+                    <div class="post-profile-icons">
+                        <img src="Images/member-2.jfif" alt="member-2"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Images/member-3.jpg" alt="profile-pic">
+                        <div>
+                            <p>Hassan Chaudary</p>
+                            <span>14 April 2021, 3:30 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Little one 🥰❤️ <a href="#">#Nephew</a> <a href="#">#Baby</a></p>
+                <img src="Images/feed-image-4.jfif" alt="feed-image-3" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Images/like.png" alt="like">150</div>
+                        <div><img src="Images/comments.png" alt="like">55</div>
+                        <div><img src="Images/share.png" alt="like">20</div>
+                    </div>
+
+                    <div class="post-profile-icons">
+                        <img src="Images/member-3.jpg" alt="member-3"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Images/member-4.jpg" alt="profile-pic">
+                        <div>
+                            <p>Hassan Ahmad</p>
+                            <span>9 September 2021, 2:30 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"><i class="fa-sharp fa-solid fa-location-dot"></i> Abbottabad </p>
+                <p class="post-text">Hassan with little sister 🥰❤️ <a href="#">#Brother</a> <a href="#">#Sister</a></p>
+                <img src="Images/feed-image-5.jfif" alt="feed-image-5" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Images/like.png" alt="like">350</div>
+                        <div><img src="Images/comments.png" alt="like">55</div>
+                        <div><img src="Images/share.png" alt="like">20</div>
+                    </div>
+
+                    <div class="post-profile-icons">
+                        <img src="Images/member-4.jpg" alt="member-3"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <button type="button" class="load-more-button">Load More</button>
+
+        </div>
+        <!-- ****************************************right-sidebar**************************************** -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>9</h3>
+                    <span>November</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Bilal's Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Bilal's Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisements</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="Images/advertisement.png" alt="advertisement">
+
+            <div class="sidebar-title">
+                <h4>Conversations</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-1.jfif" alt="member-1">
+                </div>
+                <p>Zain ul Abidin</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-2.jfif" alt="member-1">
+                </div>
+                <p>Arham Tayyab</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-3.jpg" alt="member-1">
+                </div>
+                <p>Hassan Choudary</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-4.jpg" alt="member-1">
+                </div>
+                <p>Hassan Ahmad</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-5.jfif" alt="member-1">
+                </div>
+                <p>Muhammad Umar</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-6.jfif" alt="member-1">
+                </div>
+                <p>Huzaifa Jadoon</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-7.jfif" alt="member-1">
+                </div>
+                <p>Comsats Abbottabad</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-8.png" alt="member-1">
+                </div>
+                <p>Emma</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-9.png" alt="member-1">
+                </div>
+                <p>Sophia</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; 2022-Bilal's Website</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="Js/script.js"></script>
+
+</body>
+
+</html>
